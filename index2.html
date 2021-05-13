@@ -8,6 +8,15 @@
             /*grid-template-columns: 1fr 2fr 1fr; /* recommended style of column measurement */
             grid-template-columns: repeat(3, 1fr);
             gap: 1em;
+            /*grid-auto-rows: 100px; /* set height of div within wrapper */
+            grid-auto-rows: minmax(100px, auto); /* set height to fit content of div in wrapper */
+        }
+
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            gap: 1em;
         }
 
         .wrapper > div{ /* set background color of div to grey */
@@ -18,6 +27,11 @@
         .wrapper > div:nth-child(odd){ /* set next div to lighter shade of grey  */
             background: #ddd;
         }
+
+        .nested > div{
+            border: #333 1px solid;
+            padding: 1em;
+        }
     </style>
 </head>
 <body>
@@ -26,10 +40,22 @@
             Lorem ipsum dolor sit.
         </div>
         <div>
-            Lorem ipsum dolor sit.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus 
+            accusamus, nesciunt porro aspernatur odit illo quia corporis iure in 
+            accusantium quam, alias saepe aperiam tempore temporibus architecto iste 
+            laudantium. Unde aut vero deserunt rerum repudiandae, ducimus reprehenderit 
+            sapiente a iusto.
         </div>
-        <div>
-            Lorem ipsum dolor sit.
+        <div class="nested">
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
         </div>
         <div>
             Lorem ipsum dolor sit.
