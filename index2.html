@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            /*grid-template-columns: 1fr 2fr 1fr; /* recommended style of column measurement */
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1em;
+        }
+
+        .wrapper > div{ /* set background color of div to grey */
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){ /* set next div to lighter shade of grey  */
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+        <div>
+            Lorem ipsum dolor sit.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <style>
+            .wrapper{
+                display: grid; /* sets div to use grid */
+                grid-template-columns: 70% 30%; /* defines column width of divs within wrapper */
+                /* column-gap: 1em; /* sets column gap between divs within wrapper */
+                /* row-gap: 1em; /* sets row gap btw divs within wrapper */
+                gap: 1em; /* sets column & row gap */
+            }
+
+            .wrapper > div{ /* set background color of div to grey */
+                background: #eee;
+                padding: 1em;
+            }
+
+            .wrapper > div:nth-child(odd){ /* set next div to lighter shade of grey  */
+                background: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat temporibus voluptates perspiciatis quas nostrum distinctio porro 
+                iusto ducimus soluta quos eius possimus maxime vel dolores, inventore modi 
+                labore excepturi natus nihil atque! Dolore nulla non esse modi porro 
+                distinctio error voluptas exercitationem facilis tempora asperiores deleniti 
+                omnis adipisci accusamus et, fuga, unde ad? Enim, quaerat quia! Delectus quae 
+                eaque officiis blanditiis, totam distinctio expedita ducimus, obcaecati maxime, 
+                harum praesentium impedit perferendis! Soluta, mollitia! Est voluptas 
+                accusantium exercitationem harum tempora ut.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus 
+                exercitationem, molestiae autem expedita harum eaque sit doloribus, vero 
+                assumenda facilis, ab quo optio odit et voluptatum minus repellendus error 
+                commodi!
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Fugiat temporibus voluptates perspiciatis quas nostrum distinctio porro 
+                iusto ducimus soluta quos eius possimus maxime vel dolores, inventore modi 
+                labore excepturi natus nihil atque! Dolore nulla non esse modi porro 
+                distinctio error voluptas exercitationem facilis tempora asperiores deleniti 
+                omnis adipisci accusamus et, fuga, unde ad? Enim, quaerat quia! Delectus quae 
+                eaque officiis blanditiis, totam distinctio expedita ducimus, obcaecati maxime, 
+                harum praesentium impedit perferendis! Soluta, mollitia! Est voluptas 
+                accusantium exercitationem harum tempora ut.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus 
+                exercitationem, molestiae autem expedita harum eaque sit doloribus, vero 
+                assumenda facilis, ab quo optio odit et voluptatum minus repellendus error 
+                commodi!
+            </div>
+        </div>
+    </body>
+</html>
