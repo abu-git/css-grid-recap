@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Grid</title>
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-auto-rows: minmax(100px, auto);
+            gap: 1em;
+            justify-items: stretch; /*  stretch is default. Can use start, center or end */
+            align-items: stretch; /* stretch is default. Can use start, center or end */
+        }
+
+        .wrapper > div{ /* set background color of div to grey */
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd){ /* set next div to lighter shade of grey  */
+            background: #ddd;
+        }
+
+        .box1{
+            /*align-self: start; /* aligns div to top */
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        .box2{
+            /*align-self: end; /* aligns div to bottom */
+            grid-column: 3;
+            grid-row: 1/3;
+        }
+
+        .box3{
+            /*justify-self: end; /* aligns div to end (far right) */
+            grid-column: 2/4;
+            grid-row: 3;
+        }
+
+        .box4{
+            grid-column: 1;
+            grid-row: 2/4;
+            border: 1px solid #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>
